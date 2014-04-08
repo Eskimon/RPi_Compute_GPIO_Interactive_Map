@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>RaspberryPi compute GPIO interactive map</title>
+        <link type="text/css" rel="stylesheet" href="rpic_style.css" />
+    </head>
+    <body>
+	    <div id="interactiveMapContainer">
+		    <table class="data">
+	    		<tr>
+	    			<th>Side</th>
+	    			<th>Pin number</th>
+	    			<th>Pin Name</th>
+	    			<th>Notes</th>
+	    		</tr>
+	    		<tr id="frontRow"><th>Front</th><td> - </td><td> - </td><td> - </td></tr>
+	    		<tr id="backRow"><th>Back</th><td> - </td><td> - </td><td> - </td></tr>
+		    </table>
+            <p id="imageContainer">
+	    		<img src="rpic.png" id="bgPic" width="700px">
+            </p> <br>
+            <p id="optionsReveal">
+		    	<input type="checkbox" id="inputgpioPin">Show available GPIO <br>
+		    	<input type="checkbox" id="inputgpiowarningPin"> Available GPIO with special notes <br>
+		    	<input type="checkbox" id="inputhdmiPin"> All HDMI pins <br>
+		    	<input type="checkbox" id="inputpowerPin"> The power pins <br>
+		    	<input type="checkbox" id="inputcam0Pin"> Plug your camera here... <br>
+		    	<input type="checkbox" id="inputcam1Pin"> A second camera? Here you go... <br>
+		    	<input type="checkbox" id="inputdsi0Pin"> Pins related to DSI0 <br>
+		    	<input type="checkbox" id="inputdsi1Pin"> Pins related to DSI1 <br>
+		    	<input type="checkbox" id="inputnotconnectedPin"> Some unconnected Pins <br>
+		    	<input type="checkbox" id="inputotherPin"> Some other pins... <br>
+		    </p>
+	    </div>
+	    <script type="text/javascript" src="rpic_script.js"></script>
+    </body>
+</html>

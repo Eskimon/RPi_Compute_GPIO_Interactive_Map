@@ -1,0 +1,106 @@
+table.data {
+	text-align: center;
+}
+
+table.data th {
+  font-weight: bold;
+  background: #eee;
+  width: 20%;
+}
+
+.headerPin {
+	position: absolute;
+	width: 5px;
+	height: 18px;
+	border: 1px solid black;/*#bbb;*/
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+}
+.headerPin:hover {
+	cursor: pointer;
+}
+
+.hdmiPin {
+	background-color: #f1c40f;
+	opacity: 0;
+}
+
+.powerPin {
+	background-color: #e74c3c;
+	opacity: 0;
+}
+
+.gpioPin {
+	background-color: #3498db;
+	opacity: 0;
+}
+
+.gpiowarningPin {
+	background-color: #2980da;
+	opacity: 0;
+}
+
+.notconnectedPin {
+	background-color: #7f8c8d;
+	opacity: 0;
+}
+
+.cam0Pin {
+	background-color: #e67e22;
+	opacity: 0;
+}
+
+.cam1Pin {
+	background-color: #d35400;
+	opacity: 0;
+}
+
+.dsi0Pin {
+	background-color: #f1c40f;
+	opacity: 0;
+}
+
+.dsi1Pin {
+	background-color: #f39c12;
+	opacity: 0;
+}
+
+.otherPin {
+	background-color: #8e44ad;
+	opacity: 0;
+}
+
+.lightOpacity {
+	opacity: 0.15;
+}
+
+.opacity {
+	opacity: 0.65;
+}
+
+.legend {
+	display: inline-block;
+	position: relative;
+	opacity: 1;
+	top: 6px;
+}
+
+
+.hdmiPin:hover,
+.powerPin:hover,
+.gpioPin:hover,
+.gpiowarningPin:hover,
+.notconnectedPin:hover,
+.cam0Pin:hover,
+.cam1Pin:hover,
+.dsi0Pin:hover,
+.dsi1Pin:hover,
+.otherPin:hover,
+.otherPin:hover {
+	opacity: 1;
+}
+
+p {
+	margin: 0px;
+}

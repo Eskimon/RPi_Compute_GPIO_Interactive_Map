@@ -1,11 +1,12 @@
 table.data {
 	text-align: center;
+	width: 600px;
 }
 
 table.data th {
   font-weight: bold;
   background: #eee;
-  width: 20%;
+  /*width: 20%;*/
 }
 
 .headerPin {

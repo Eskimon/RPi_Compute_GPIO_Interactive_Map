@@ -123,20 +123,16 @@ function hovering(evt) {
 	var idx = parseInt(id.substr(id.indexOf("_")+1))-1;
 	var liste = GPIO;
 
-	idx = (idx%2) ? idx-1 : idx;
+	var side = (idx%2) ? "Front" : "Back";
 	var data = liste[idx];
 
-	var content = "<th>Front</th>";
+	var content = "<th>" + side + "</th>";
 	content += '<td>' + ((data['Number'] != "") ? data['Number'] : ' - ') + '</td>';
 	content += '<td>' + ((data['Name'] != "") ? data['Name'] : ' - ') + '</td>';
 	content += '<td>' + ((data['Notes'] != "") ? data['Notes'] : ' - ') + '</td>';
 	frontRow.innerHTML = content; //update the row
-	data = liste[idx+1];
-	content = "<th>Back</th>";
-	content += '<td>' + ((data['Number'] != "") ? data['Number'] : ' - ') + '</td>';
-	content += '<td>' + ((data['Name'] != "") ? data['Name'] : ' - ') + '</td>';
-	content += '<td>' + ((data['Notes'] != "") ? data['Notes'] : ' - ') + '</td>';
-	backRow.innerHTML = content; //update the row
+	
+
 }
 
 /**********************************************************************/

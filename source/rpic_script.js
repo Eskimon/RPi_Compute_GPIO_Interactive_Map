@@ -123,7 +123,7 @@ function hovering(evt) {
 	var idx = parseInt(id.substr(id.indexOf("_")+1))-1;
 	var liste = GPIO;
 
-	var side = (idx%2) ? "Front" : "Back";
+	var side = (idx%2) ? "Back" : "Front";
 	var data = liste[idx];
 
 	var content = "<th>" + side + "</th>";
